@@ -4,7 +4,7 @@
           <div class="main-menu">
               <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img class="logoimg" src="http://forum.sa-mp.im/images/logo_dark_290.png" width="290px" height="25px" alt=""></a>
+            <a class="navbar-brand" href="index.php"><img class="logoimg" src="http://forum.sa-mp.im/images/logo_dark_290.png" width="290px" height="25px" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>

@@ -11,8 +11,8 @@ class Category{
     public $Category_LastPost;
     public $Category_LastTime;
 
-    public static function GetAllCategories(){
-        return self::CategoryQuery("SELECT * FROM category");
+    public static function GetAllCategories($FID){
+        return self::CategoryQuery("SELECT * FROM category WHERE Forum_ID = '$FID'");
     }
 
     public static function CategoryQuery($sql){

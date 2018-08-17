@@ -5,6 +5,11 @@ class Forum{
     public $Forum_ID;
     public $Forum_Name;
 
+    public static function GetForumByID($FID){
+        $forum = self::ForumQuery("SELECT * FROM forum WHERE Forum_ID = '$FID'");
+        return !empty($forum) ? array_shift($forum) : false;
+    }
+
     public static function GetAllForums(){
         return self::ForumQuery("SELECT * FROM forum");
     }
