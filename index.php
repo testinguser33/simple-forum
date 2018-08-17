@@ -74,7 +74,7 @@
                 <th class="thRadius" colspan="4"><a class="TableLink" href="#">Server Announcements & Information</a></th>
             </tr>
             </thead>
-            <tbod>
+            <tbody>
             <tr>
                 <td><a class="TableFirst" href="#">Community Announcements</a> <br/> Here you can get the latest news from the management.</td>
                 <td>151 <br/> <dfn>Topics</dfn></td>
@@ -104,7 +104,7 @@
                     <th class="thRadius" colspan="4"><a class="TableLink" href="#">Server Discussion & Support</a></th>
                 </tr>
                 </thead>
-                <tbod>
+                <tbody>
                 <tr>
                     <td><a class="TableFirst" href="#">General Talk</a> <br/> Talk about anything related to the community.</td>
                     <td>1550 <br/> <dfn>Topics</dfn></td>
