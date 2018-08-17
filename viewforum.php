@@ -18,6 +18,9 @@
       else if(isset($_GET["c"])){
         include("includes/viewcategoryContent.php");
       }
+      else if(isset($_GET["t"])){
+        include("includes/viewtopicContent.php");
+      }
     ?>
 
 
