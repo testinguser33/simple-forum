@@ -1,3 +1,5 @@
+<?php include("PHP/init.php"); ?>
+
 <header>
           <div class="main-menu">
               <div class="container">
