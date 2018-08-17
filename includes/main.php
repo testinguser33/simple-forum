@@ -1,39 +1,49 @@
-<?php 
-
-?>
-
 <article class="main">
+    <!-- Sectin start -->
+
+        <?php
+            $allForums = Forum::GetAllForums();
+            foreach($allForums as $forum){
+
+             
+        ?>
+
         <div class="container">
         <table class="table table-hover borderless">
             <thead>
             <tr class="MainRow">
-                <th class="thRadius" colspan="4"><a class="TableLink" href="#">Server Announcements & Information</a></th>
+                <th class="thRadius" colspan="4"><a class="TableLink" href="#"><?php echo $forum->Forum_Name; ?></a></th>
             </tr>
             </thead>
             <tbody>
+            <?php
+                $allCategories = Category::GetAllCategories();
+                foreach($allCategories as $category){
+            ?>
+               
             <tr>
-                <td><a class="TableFirst" href="#">Community Announcements</a> <br/> Here you can get the latest news from the management.</td>
-                <td>151 <br/> <dfn>Topics</dfn></td>
-                <td>16909 <br/><dfn>Posts</dfn></td>
-                <td><a class="LastPostLink" href="#">Re: woot</a> <br/> by <a class="LastPostLink" href="#">M_Walker</a> Yesterday, 2:57 pm</td>
+             <td><a class="TableFirst" href="#"><?php echo $category->Category_Name; ?></a> <br/> <?php echo $category->Category_Description; ?></td>
+                <td><?php echo $category->Category_TopicsNum; ?> <br/> <dfn>Topics</dfn></td>
+                <td><?php echo $category->Category_PostsNum; ?> <br/><dfn>Posts</dfn></td>
+                <td><a class="LastPostLink" href="#"><?php echo $category->Category_LastPost; ?></a> <br/> by <a class="LastPostLink" href="#"><?php echo $category->Category_LastPerson; ?></a> <?php echo $category->Category_LastTime; ?></td>
             </tr>
-            <tr>
-                <td><a class="TableFirst" href="#">Community Information</a> <br/> Here you can find basic information about the community. </td>
-                <td>29 <br/> <dfn>Topics</dfn></td>
-                <td>458 <br/><dfn>Posts</dfn></td>
-                <td><a class="LastPostLink" href="#">Re: Donate 4 Cash - Trading C…</a> <br/> by <a class="LastPostLink" style="color: #FF0000;" href="#">Darien</a> Today, 1:11 am</td>
-            </tr>
-            <tr>
-                <td><a class="TableFirst" href="#">Community Rules</a> <br/> Official rules of Italy Mafia can be found in this section. </td>
-                <td>35 <br/> <dfn>Topics</dfn></td>
-                <td>89 <br/><dfn>Posts</dfn></td>
-                <td><a class="LastPostLink" href="#">Re: Need help</a> <br/> by <a class="LastPostLink" href="#">Arrow</a> March 30th, 2018, 7:38 pm</td>
-            </tr>
+            <?php
+            }
+            ?>
             </tbody>
         </table>
+        </div>
 
         <div class="chunk2"></div>
 
+        <?php
+                
+            }
+        ?>
+        <!-- Sectin close -->
+
+
+    <!-- <div class="container">
         <table class="table table-hover borderless">
                 <thead>
                 <tr class="MainRow">
@@ -55,5 +65,5 @@
                 </tr>
                 </tbody>
             </table>
-        </div>
+        </div> -->
     </article>
