@@ -10,7 +10,15 @@
     <div class="crta"> </div>
     <div class="chunk"></div>
 
-    <?php include("includes/viewforumContent.php"); ?>
+    
+    <?php
+      if(isset($_GET["f"])){
+      include("includes/viewforumContent.php"); 
+      }
+      else if(isset($_GET["c"])){
+        include("includes/viewcategoryContent.php");
+      }
+    ?>
 
 
 

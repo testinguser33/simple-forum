@@ -1,26 +1,21 @@
-<?php
+<?php 
 
-class Category{
+class Topic{
+    
+    public $Topic_ID;
+    public $Topic_Name;
+    public $Topic_Author;
+    public $Topic_CreationDate;
+    public $Topic_Replies;
+    public $Topic_Views;
+    public $Topic_LastPerson;
+    public $Topic_LastTime;
 
-    public $Category_ID;
-    public $Category_Name;
-    public $Category_Description;
-    public $Category_TopicsNum;
-    public $Category_PostsNum;
-    public $Category_LastPerson;
-    public $Category_LastPost;
-    public $Category_LastTime;
-
-    public static function GetCategoryByID($CID){
-        $forum = self::CategoryQuery("SELECT * FROM category WHERE Category_ID = '$CID'");
-        return !empty($forum) ? array_shift($forum) : false;
+    public static function GetAllTopics($TID){
+        return self::TopicQuery("SELECT * FROM topic WHERE Category_ID = '$TID'");
     }
 
-    public static function GetAllCategories($CID){
-        return self::CategoryQuery("SELECT * FROM category WHERE Forum_ID = '$CID'");
-    }
-
-    public static function CategoryQuery($sql){
+    public static function TopicQuery($sql){
         global $db;
         $ForumArray = array();
         $ForumQ = $db->Query($sql);
@@ -45,6 +40,7 @@ class Category{
         $object_props = get_object_vars($this);
         return array_key_exists($prop, $object_props);
     }
+    
 }
 
 ?>
