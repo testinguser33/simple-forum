@@ -20,7 +20,7 @@
              <td><a class="TableFirst" href="viewforum.php?c=<?php echo $category->Category_ID; ?>"><?php echo $category->Category_Name; ?></a> <br/> <?php echo $category->Category_Description; ?></td>
                 <td><?php echo $category->Category_TopicsNum; ?> <br/> <dfn>Topics</dfn></td>
                 <td><?php echo $category->Category_PostsNum; ?> <br/><dfn>Posts</dfn></td>
-                <td><a class="LastPostLink" href="#"><?php echo $category->Category_LastPost; ?></a> <br/> by <a class="LastPostLink" href="#"><?php echo $category->Category_LastPerson; ?></a> <?php echo $category->Category_LastTime; ?></td>
+                <td><a class="LastPostLink" href="#"><?php echo $category->Category_LastPost; ?></a> <br/> by <a class="LastPostLink" href="#"><?php echo $category->Category_LastPerson; ?></a> <?php DateTimeFormat::Convert($category->Category_LastTime); ?></td>
             </tr>
             <?php
             }
