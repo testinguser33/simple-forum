@@ -1,26 +1,24 @@
 <?php 
 
-class Topic{
-    
+class Post{
+    public $Post_ID;
+    public $Post_Name;
+    public $Post_Description;
+    public $Post_Date;
+    public $Post_Main;
     public $Topic_ID;
-    public $Topic_Name;
-    public $Topic_Author;
-    public $Topic_CreationDate;
-    public $Topic_Replies;
-    public $Topic_Views;
-    public $Topic_LastPerson;
-    public $Topic_LastTime;
+    public $User_ID;
 
-    public static function GetTopicByID($TID2){
-        $topic = self::TopicQuery("SELECT * FROM topic WHERE Topic_ID = '$TID2'");
-        return !empty($topic) ? array_shift($topic) : false;
+    public static function GePostByID($PID){
+        $post = self::PostQuery("SELECT * FROM post WHERE Post_ID = '$PID'");
+        return !empty($post) ? array_shift($post) : false;
     }
 
-    public static function GetAllTopics($TID){
-        return self::TopicQuery("SELECT * FROM topic WHERE Category_ID = '$TID'");
+    public static function GetAllPosts($PID2){
+        return self::PostQuery("SELECT * FROM post WHERE Topic_ID = '$PID2'");
     }
 
-    public static function TopicQuery($sql){
+    public static function PostQuery($sql){
         global $db;
         $ForumArray = array();
         $ForumQ = $db->Query($sql);
@@ -45,7 +43,6 @@ class Topic{
         $object_props = get_object_vars($this);
         return array_key_exists($prop, $object_props);
     }
-    
 }
 
 ?>

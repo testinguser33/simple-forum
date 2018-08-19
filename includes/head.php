@@ -7,5 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="http://forum.sa-mp.im/styles/anami/theme/images/favicon.gif">
     <title>Italy Mafia Community</title>
   </head>
