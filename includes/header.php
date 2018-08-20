@@ -34,7 +34,7 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownProfile">
                         <a class="dropdown-item" href="#"><i class="material-icons">build</i> User Control Panel</a>
                         <a class="dropdown-item" href="#"><i class="material-icons">person</i> Profile</a>
-                        <a class="dropdown-item" href="#"><i class="material-icons">power_settings_new</i> Logout</a>
+                        <a class="dropdown-item" href="includes/logout.php"><i class="material-icons">power_settings_new</i> Logout</a>
                       </div>
                       </div>
                 </li>

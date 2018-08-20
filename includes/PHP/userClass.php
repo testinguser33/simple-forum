@@ -4,8 +4,8 @@ class User{
 
     public $User_ID;
     public $User_Username;
-    private $User_Password;
-    private $User_Email;
+    public $User_Password;
+    public $User_Email;
     public $User_GameName;
     public $User_Avatar;
     public $User_PostsNum;
@@ -50,6 +50,15 @@ class User{
         $sql = "SELECT * FROM post WHERE User_ID = '$this->User_ID'";
         $result = $db->connection->query($sql);
         return $result->num_rows;
+    }
+
+    public static function VerifyUser($username, $password){
+        global $db;
+        $username = $db->EscapeString($username);
+        $password = $db->EscapeString($password);
+        $sql = "SELECT * FROM user WHERE User_Username = '$username' AND User_Password = '$password'";
+        $foundUser = self::UserQuery($sql);
+        return !empty($foundUser) ? array_shift($foundUser) : false;
     }
 
 }

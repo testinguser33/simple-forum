@@ -6,6 +6,7 @@
   <body>
 
   <?php include("includes/header.php"); ?>
+  <?php include("includes/sessionCheck.php"); ?>
 
     <div class="crta"> </div>
     <div class="chunk"></div>

@@ -17,7 +17,7 @@ class Database{
        return $result;
     }
 
-    public function escapeString($string){
+    public function EscapeString($string){
         $escaped = $this->connection->real_escape_string($string);
         return $escaped;
     }
