@@ -3,6 +3,6 @@
 <?php 
 
 $session->Logout();
-header("Location: ../loginForm.php");
+header("Location: ../index.php");
 
 ?>

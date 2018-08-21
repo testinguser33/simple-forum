@@ -5,8 +5,16 @@
 
   <body>
 
-  <?php include("includes/header.php"); ?>
-  <?php include("includes/sessionCheck.php"); ?>
+   <?php include("includes/PHP/init.php"); ?>
+
+   <?php 
+    if(!$session->IsSigned()){
+        include("includes/headerNotLogged.php");
+    }
+    else{
+      include("includes/header.php");
+    }
+    ?>
 
     <div class="crta"> </div>
     <div class="chunk"></div>

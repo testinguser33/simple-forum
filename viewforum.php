@@ -4,9 +4,18 @@
     <?php include("includes/head.php"); ?>
 
   <body>
+  
+  <?php include("includes/PHP/init.php"); ?>
 
-  <?php include("includes/header.php"); ?>
-  <?php include("includes/sessionCheck.php"); ?>
+  <?php 
+    if(!$session->IsSigned()){
+        include("includes/headerNotLogged.php");
+        header("Location: index.php");
+    }
+    else{
+        include("includes/header.php");
+    }
+  ?>
     <div class="crta"> </div>
     <div class="chunk"></div>
 

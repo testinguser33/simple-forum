@@ -27,14 +27,22 @@
                     <a class="nav-link" href="#"><i class="material-icons">notifications</i></a>
                 </li>
                 <li class="nav-item">
-                    <div class="dropdown show">
-                  <a class="nav-link" href="#" role="button" id="dropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">person</i></a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownProfile">
-                        <a class="dropdown-item" href="userControlPanel.php"><i class="material-icons">build</i> User Control Panel</a>
-                        <a class="dropdown-item" href="#"><i class="material-icons">person</i> Profile</a>
-                        <a class="dropdown-item" href="includes/logout.php"><i class="material-icons">power_settings_new</i> Logout</a>
-                      </div>
-                      </div>
+                <div class="dropdown show">
+      <a class="nav-link" href="#" role="button" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">person</i></a>
+          <div class="dropdown-menu" aria-labelledby="dropdownSearch" style="padding:20px;">
+                  <form action="includes/login.php" method="POST">
+                  <label>
+                  <input class="form-control" type="text" name="username" placeholder="Username" style="background-color: #DDDDDD;">
+                  </label>
+                  <label>
+                  <input class="form-control" type="password" name="password" placeholder="Password" style="background-color: #DDDDDD;">
+                  </label>
+                  <label>
+                  <input type="submit" class="btn btn-block" value="Login" name="login" style="width:136px; border-radius: 0;" />
+                  </label>
+                  </form>
+          </div>
+          </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown show">
