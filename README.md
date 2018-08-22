@@ -5,8 +5,8 @@
 <h4>forum - table</h4>
 <table>
 <tr>
-    <th>Forum_ID</th>
-    <th>Forum_Name</th>
+    <th>Forum_ID(int - 3)</th>
+    <th>Forum_Name(varchar - 255)</th>
 </tr>
 <tr>
     <td>1</td>
@@ -21,12 +21,12 @@
 <h4>category - table</h4>
 <table>
 <tr>
-    <th>Category_ID</th>
-    <th>Category_Name</th>
-    <th>Category_Description</th>
-    <th>Category_TopicsNum</th>
-    <th>Category_PostsNum</th>
-    <th>Forum_ID</th>
+    <th>Category_ID(int - 3)</th>
+    <th>Category_Name(varchar - 255)</th>
+    <th>Category_Description(varchar - 255)</th>
+    <th>Category_TopicsNum(int - 255)</th>
+    <th>Category_PostsNum(int - 255)</th>
+    <th>Forum_ID(int - 3)</th>
 </tr>
 <tr>
     <td>1</td>
@@ -49,11 +49,11 @@
 <h4>topic - table</h4>
 <table>
 <tr>
-    <th>Topic_ID</th>
-    <th>Topic_Name</th>
-    <th>Topic_Replies</th>
-    <th>Topic_Views</th>
-    <th>Category_ID</th>
+    <th>Topic_ID(int - 7)</th>
+    <th>Topic_Name(varchar - 255)</th>
+    <th>Topic_Replies(int - 255)</th>
+    <th>Topic_Views(int - 255)</th>
+    <th>Category_ID(int - 3)</th>
 </tr>
 <tr>
     <td>1</td>
@@ -74,12 +74,12 @@
 <h4>user - table</h4>
 <table>
 <tr>
-    <th>User_ID</th>
-    <th>User_Username</th>
-    <th>User_Password</th>
-    <th>User_Email</th>
-    <th>User_GameName</th>
-    <th>User_Avatar</th>
+    <th>User_ID(int - 10)</th>
+    <th>User_Username(varchar - 120)</th>
+    <th>User_Password(varchar - 120)</th>
+    <th>User_Email(varchar - 120)</th>
+    <th>User_GameName(varchar - 120)</th>
+    <th>User_Avatar(text)</th>
 </tr>
 <tr>
     <td>1</td>
