@@ -1,4 +1,1 @@
-<p align="center">
-<h1>Simple Forum</h1>
-</p>
-Just a simple forum, learning how to use git
+<h1 align="center">Simple Forum</h1>
