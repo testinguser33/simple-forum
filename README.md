@@ -71,33 +71,30 @@
 </tr>
 </table>
 
-<h4>post - table</h4>
+<h4>user - table</h4>
 <table>
 <tr>
-    <th>Post_ID</th>
-    <th>Post_Name</th>
-    <th>Post_Description</th>
-    <th>Post_Date</th>
-    <th>Post_Main</th>
-    <th>Topic_ID</th>
     <th>User_ID</th>
+    <th>User_Username</th>
+    <th>User_Password</th>
+    <th>User_Email</th>
+    <th>User_GameName</th>
+    <th>User_Avatar</th>
 </tr>
 <tr>
     <td>1</td>
-    <td>Some post name</td>
-    <td>Some post description</td>
-    <td>Date created - adds automatically</td>
-    <td>Check if it's new topic</td>
-    <td>1</td>
-    <td>1</td>
+    <td>Username</td>
+    <td>Password</td>
+    <td>some@email.com</td>
+    <td>Name_Lastname</td>
+    <td>Image_Path</td>
 </tr>
 <tr>
-    <td>2..</td>
-    <td>Some post name..</td>
-    <td>Some post description..</td>
-    <td>Date created - adds automatically..</td>
-    <td>Check if it's new topic..</td>
-    <td>TopicID..</td>
-    <td>UserID..</td>
+    <td>2</td>
+    <td>JohnWick</td>
+    <td>123Password</td>
+    <td>John.Wick@gmail.com</td>
+    <td>John_Wick</td>
+    <td>img/user_avatars/imgName.jpg</td>
 </tr>
 </table>
