@@ -1,8 +1,8 @@
 <h1 align="center">Simple Forum</h1>
 
 <h3 align="center">Database structure</h1>
-```
 
+```html
 <table>
 <tr>
     <th>test</th>
@@ -11,5 +11,4 @@
     <td>test</td>
 </tr>
 </table>
-
 ```
