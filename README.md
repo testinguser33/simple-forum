@@ -95,6 +95,6 @@
     <td>123Password</td>
     <td>John.Wick@gmail.com</td>
     <td>John_Wick</td>
-    <td>img/user_avatars/imgName.jpg</td>
+    <td>img/avatars/imgName.jpg</td>
 </tr>
 </table>
