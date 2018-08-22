@@ -2,7 +2,7 @@
 
 <h3 align="center">Database structure</h1>
 
-<table style="padding-right:100px;">
+<table style="padding-left:100px;">
 <tr>
     <th>test</th>
 </tr>
