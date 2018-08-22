@@ -46,6 +46,21 @@ class Topic{
         $object_props = get_object_vars($this);
         return array_key_exists($prop, $object_props);
     }
+
+    public static function GetLast(){
+        global $db;
+        $sql = $db->connection->query("SELECT * FROM post ORDER BY Post_ID DESC LIMIT 1");
+        $lastData = $sql->fetch_assoc();
+        $lastUserID = $lastData["User_ID"];
+        $lastPersonQuery = $db->connection->query("SELECT User_Username FROM user WHERE User_ID = '$lastUserID'");
+        $lastPerson = $lastPersonQuery->fetch_assoc();
+
+        $lastOut["Author"] = $lastPerson["User_Username"];
+        $lastOut["Date"] = $lastData["Post_Date"];
+        $lastOut["Name"] = $lastData["Post_Name"];
+
+        return $lastOut;
+    }
     
 }
 
