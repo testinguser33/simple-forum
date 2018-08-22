@@ -6,8 +6,8 @@ include("sessionClass.php");
 include("forumClass.php");
 include("categoryClass.php");
 include("topicClass.php");
-include("postClass.php");
 include("userClass.php");
+include("postClass.php");
 include("dateTimeFormatClass.php");
 
 ?>

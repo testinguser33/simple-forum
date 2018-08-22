@@ -12,11 +12,11 @@
                 <table class="table" style="border:none;">
                     <tr style="border:none;">
                         <td style="border:none;">Username:</td>
-                        <td style="border:none;"><div class="form-group"><input type="text" value="MiMiMi" class="form-control" readonly /></div></td>
+                        <td style="border:none;"><div class="form-group"><input type="text" value="<?php echo $user->User_Username ?>" class="form-control" readonly /></div></td>
                     </tr>
                     <tr style="border:none;">
                         <td style="border:none;">Email:</td>
-                        <td style="border:none;"><div class="form-group"><input type="text" class="form-control" /></div></td>
+                        <td style="border:none;"><div class="form-group"><input type="text" value="<?php echo $user->User_Email ?>" class="form-control" /></div></td>
                     </tr>
                     <tr style="border:none;">
                         <td style="border:none;">Password:</td>

@@ -12,7 +12,7 @@
                 <table class="table" style="border:none;">
                     <tr style="border:none;">
                         <td style="border:none;">Current image:</td>
-                        <td style="border:none;"><center><img src="http://i.imgur.com/NuHlM44.png" alt="Avatar" height="130px"></center></td>
+                        <td style="border:none;"><center><img src="<?php echo $user->User_Avatar ?>" alt="Avatar" height="130px"></center></td>
                     </tr>
                     <tr style="border:none;">
                         <td style="border:none;">Upload:</td>

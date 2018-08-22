@@ -18,6 +18,7 @@
   ?>
     <div class="crta"> </div>
     <div class="chunk"></div>
+    <?php $user = User::GetUserByID($session->UserID); ?>
     <?php
 
     if(isset($_GET["source"])){

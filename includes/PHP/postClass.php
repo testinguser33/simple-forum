@@ -43,6 +43,18 @@ class Post{
         $object_props = get_object_vars($this);
         return array_key_exists($prop, $object_props);
     }
+
+    public function Create($postName, $postDescription, $postMain, $postUserID, $postTopicID, $postCategoryID){
+        global $db;
+        $postDate = date("Y-m-d H:i:s");
+
+        $db->Query("INSERT INTO post (Post_Name, Post_Description, Post_Date, Post_Main, Topic_ID, User_ID) VALUES ('$postName', '$postDescription', '$postDate', '$postMain', '$postTopicID', '$postUserID')");
+        $postAuthor = User::GetUserByID($postUserID);
+        $db->Query("UPDATE topic SET Topic_LastPerson = '$postAuthor->User_Username', Topic_LastTime = '$postDate' WHERE Topic_ID = '$postTopicID'");
+        // echo $categoryID = $db->Query("SELECT Category_ID FROM topic WHERE Topic_ID = '$postTopicID'");
+        $db->Query("UPDATE category SET Category_LastPerson = '$postAuthor->User_Username', Category_LastPost = '$postName', Category_LastTime = '$postDate' WHERE Category_ID = '$postCategoryID'");
+
+    }
 }
 
 ?>

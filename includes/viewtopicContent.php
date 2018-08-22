@@ -31,6 +31,39 @@ $topic = Topic::GetTopicByID($_GET["t"]);
      }
         ?>
         </div>
+
+        <div class="container">
+                <?php
+
+                if(isset($_POST["post"])){
+                        $name = $_POST["name"];
+                        $content = $_POST["content"];
+
+                        $postNew = new Post();
+                        $postNew->Create($name, $content, 0, $session->UserID, $topic->Topic_ID, $topic->Category_ID);
+                }
+                
+                ?>
+                <table style="border: 1px solid #EBEBEB;" class="table">
+                <form action="" method="POST">
+                        <tr style="border:none;">
+                                <td style="border:none;">
+                                        <center><div class="form-group"><input name="name" type="text" value="Re: <?php echo $topic->Topic_Name; ?>" class="form-control" readonly /></div></center>
+                                </td>
+                        </tr>
+                        <tr style="border:none;">
+                                <td style="border:none;">
+                                        <center><textarea name="content" class="form-control" style="margin-top:15px;" rows="9" cols="90"></textarea></center>
+                                </td>
+                        </tr>
+                        <tr style="border:none;">
+                                <td style="border:none;">
+                                        <center><input name="post" type="submit" class="btn btn-primary" value="Post"></center>
+                                </td>
+                        </tr>
+                </form>
+                </table>
+        </div>
 <? 
 }
 ?>

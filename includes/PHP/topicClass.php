@@ -10,6 +10,7 @@ class Topic{
     public $Topic_Views;
     public $Topic_LastPerson;
     public $Topic_LastTime;
+    public $Category_ID;
 
     public static function GetTopicByID($TID2){
         $topic = self::TopicQuery("SELECT * FROM topic WHERE Topic_ID = '$TID2'");

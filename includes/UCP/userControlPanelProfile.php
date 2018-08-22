@@ -20,7 +20,7 @@
                     </tr>
                     <tr style="border:none;">
                         <td style="border:none;">Game name:</td>
-                        <td style="border:none;"><div class="form-group"><input type="text" class="form-control" /></div></td>
+                        <td style="border:none;"><div class="form-group"><input value="<?php echo $user->User_GameName; ?>" type="text" class="form-control" /></div></td>
                     </tr>
                     <tr style="border:none;">
                         <td style="border:none;">Discord:</td>
