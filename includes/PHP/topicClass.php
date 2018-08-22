@@ -47,9 +47,9 @@ class Topic{
         return array_key_exists($prop, $object_props);
     }
 
-    public static function GetLast(){
+    public static function GetLast($topicID){
         global $db;
-        $sql = $db->connection->query("SELECT * FROM post ORDER BY Post_ID DESC LIMIT 1");
+        $sql = $db->connection->query("SELECT * FROM post WHERE Topic_ID = '$topicID' ORDER BY Post_ID DESC LIMIT 1");
         $lastData = $sql->fetch_assoc();
         $lastUserID = $lastData["User_ID"];
         $lastPersonQuery = $db->connection->query("SELECT User_Username FROM user WHERE User_ID = '$lastUserID'");

@@ -58,7 +58,7 @@ $topic = Topic::GetTopicByID($_GET["t"]);
                         </tr>
                         <tr style="border:none;">
                                 <td style="border:none;">
-                                        <center><input name="post" type="submit" class="btn btn-primary" value="Post"></center>
+                                        <center><input name="post" type="submit" class="btn" style="border-radius: 0;" value="Post"></center>
                                 </td>
                         </tr>
                 </form>

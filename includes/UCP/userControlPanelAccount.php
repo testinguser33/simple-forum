@@ -5,7 +5,7 @@
                     <a href="?source=profile" class="list-group-item list-group-item-action">Edit profile</a>
                     <a href="?source=signature" class="list-group-item list-group-item-action">Edit signature</a>
                     <a href="?source=avatar" class="list-group-item list-group-item-action">Edit avatar</a>
-                    <a href="?source=account" class="list-group-item list-group-item-action active">Edit account settings</a>
+                    <a href="?source=account" style="background-color:#DDDDDD; color:black; border:#DDDDDD" class="list-group-item list-group-item-action active">Edit account settings</a>
                 </div>
             </div>
             <div style="background-color:#F0F0F0;height:390px;border:1px solid #EBEBEB;border-radius:4px;" class="col-9">
@@ -24,7 +24,7 @@
                     </tr>
                     <tr style="border:none;">
                         <td style="border:none;"></td>
-                        <td style="border:none;padding-left:160px;"><a href="#" class="btn btn-primary">Submit</a></td>
+                        <td style="border:none;padding-left:150px;"><input name="submit" type="submit" class="btn" value="Submit" style="border-radius: 0;"></td>
                         <td style="border:none;"></td>
                     </tr>
                 </table>

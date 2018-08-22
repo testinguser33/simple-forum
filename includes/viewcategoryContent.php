@@ -4,7 +4,7 @@
             ?>
 
         <div class="container">
-        <?php $Last = Topic::GetLast(); ?>
+        <?php  ?>
         <table class="table table-hover borderless">
             <thead>
             <tr class="MainRow">
@@ -15,6 +15,7 @@
             <?php
                 $allTopics = Topic::GetAllTopics($category->Category_ID);
                 foreach($allTopics as $topic){
+                    $Last = Topic::GetLast($topic->Topic_ID);
             ?>
                
             <tr>
