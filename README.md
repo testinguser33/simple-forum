@@ -37,11 +37,36 @@
     <td>1</td>
 </tr>
 <tr>
-    <td>2</td>
+    <td>2..</td>
     <td>Some category name..</td>
     <td>Some category description..</td>
     <td>Number of topics in category..</td>
     <td>Number of posts in category..</td>
     <td>ForumID..</td>
+</tr>
+</table>
+
+<h4>topic - table</h4>
+<table>
+<tr>
+    <th>Topic_ID</th>
+    <th>Topic_Name</th>
+    <th>Topic_Replies</th>
+    <th>Topic_Views</th>
+    <th>Category_ID</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Some topic title</td>
+    <td>Number of topic replies</td>
+    <td>Number of topic views</td>
+    <td>1</td>
+</tr>
+<tr>
+    <td>2..</td>
+    <td>Some topic title..</td>
+    <td>Number of topic replies..</td>
+    <td>Number of topic views..</td>
+    <td>CategoryID..</td>
 </tr>
 </table>
